@@ -1,0 +1,25 @@
+.pagination__list {
+  position: fixed;
+  right: 12%;
+  top: 15%;
+  color: #fff;
+    
+}
+
+.pagination__item {
+  margin-bottom: 16px;
+  
+}
+
+.pagination__link {  
+  width:  8px;
+  height: 8px;
+  border-radius: 50%;
+  color: white;
+  display: block;
+  
+
+}
+
+
+
