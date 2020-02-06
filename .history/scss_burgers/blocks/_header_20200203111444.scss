@@ -1,0 +1,31 @@
+.header {
+
+	padding: 10px;
+	
+	&__left {
+		display: inline-block;
+		width: 15%;
+		text-align: left;
+		vertical-align: middle;
+		
+	}
+	
+	&__center {
+	
+		display: inline-block;
+		width: 62%;
+		vertical-align: middle;
+	
+	}
+	
+	&__right {
+	
+		text-align: right;
+		display: inline-block;	
+	
+	}
+	
+}
+
+
+

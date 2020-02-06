@@ -1,0 +1,54 @@
+.best {
+  background: url("./../img_burgers/section_best/background-best.png") center center/cover no-repeat;
+  
+ }	
+ 
+ 
+	
+.best__list {
+	display:flex;
+	
+	}
+
+.best__item {
+	flex: 1;
+	margin-right: 35px;
+	text-align: center;
+}
+	
+
+.best__item:last-child {
+	margin-right: 0; }
+
+	
+.best__img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  }
+
+.best__img-fresh {
+  background: url("./../img_burgers/section_best/meat.png") 0 0 no-repeat; }
+
+.best__img-hand {
+  background: url("./../img_burgers/section_best/hand.png") 0 0 no-repeat; }
+
+.best__img-nature {
+  background: url("./../img_burgers/section_best/natural.png") 0 0 no-repeat; }
+
+.best__title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Lifehack";
+  color: #2f3234;
+  line-height: 1.167;
+  text-align: center;
+  padding: 25px 0px; }
+
+.best__text {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(47, 50, 52, 0.8);
+  line-height: 1.714;
+  text-align: center; }

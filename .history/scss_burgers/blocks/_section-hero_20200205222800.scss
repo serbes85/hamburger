@@ -1,0 +1,29 @@
+.hero {
+
+	background: url("./../img_burgers/section_hero/background-hero.png") center center / cover no-repeat;
+	
+}
+
+.hero__container {
+
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 20px 20px;
+	
+}
+
+.hero__img {
+
+	width: 95%;
+}
+
+
+.hero__text {
+
+	width: 95%;
+	font-family: "lifehack";
+    font-size: 65px;
+	color: #fff;
+
+}
