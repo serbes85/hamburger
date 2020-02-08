@@ -1,0 +1,66 @@
+.menu {
+	background: url("./../img_burgers/section-menu/background-menu.jpg") center center/cover no-repeat;
+	position: relative; 
+}
+
+
+.menu__list {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-end;
+	width:35rem;
+	overflow: hidden;
+  
+
+}
+
+.menu__item {
+	display: flex;
+    	
+}
+
+
+.menu__link {
+	// background: url("./../img_burgers/section-menu/meat.png") center center/cover no-repeat;
+	font-size: 40px;
+	font-family: "Gagalin";
+	color: rgb(255, 255, 255);
+	line-height: 1.601;
+	text-decoration:none;
+	width: 5rem;
+	position: relative;
+    white-space: nowrap;
+    
+.menu__link--vegetarian {
+    background: url("../../img_burgers/section-menu/vegetarian.png") center center/cover no-repeat;
+}
+		
+	
+}
+
+.menu__link-title {
+	position:absolute;
+	left:0;
+	bottom: -25px;
+	transform-origin: 0 0;
+	transform: rotateZ(-90deg);
+}
+
+.menu__link-txt {
+    align-items: flex-start;
+    display: flex;
+    width: 0;
+    overflow: hidden;
+    background: rgba(47, 50, 52, 0.93);
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: "ubuntu", Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: left;
+
+}
