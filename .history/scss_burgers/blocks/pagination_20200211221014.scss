@@ -1,0 +1,23 @@
+.pagination__list {
+
+    position: fixed;
+    top: 20%;
+    right: 13%;
+   
+
+}
+
+.pagination__link {
+
+    display: flex;
+    white-space: nowrap;
+
+    &:before {
+        content:'';
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: #fff;
+        margin-bottom: 15px; 
+    }
+}

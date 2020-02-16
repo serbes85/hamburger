@@ -1,0 +1,113 @@
+.reviews {
+  position: relative; }
+
+.reviews__list {
+  /*font-size: 0px;
+  width: 100%;*/
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.reviews__item {
+  width: 25%;
+  height: 50%;
+  background: center center / cover no-repeat;
+  position: relative;
+
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
+
+  }
+
+.person__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  text-align: center;
+  padding: rem(20px); }
+
+.list__reviews:hover:after {
+  opacity: 1; }
+
+.person__description:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.person--img-photo1 {
+	background: url("./../img_burgers/section-reviews/photo1.png") center center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+   }
+   
+
+.person--img-photo2 {
+	background: url("./../img_burgers/section-reviews/photo2.png") center center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+   }
+
+.person--img-photo3 {
+	background: url("./../img_burgers/section-reviews/photo3.png") center center / cover no-repeat;
+   width: 100%;
+	height: 100%;
+   }
+
+.person--img-photo4 {
+	background: url("./../img_burgers/section-reviews/photo4.png") center center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+   }
+
+.person--img-photo5 {
+	background: url("./../img_burgers/section-reviews/photo5.png") center center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+   }
+
+.person--img-photo6 {
+	background: url("./../img_burgers/section-reviews/photo6.png") center center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+  }
+
+.person--img-photo7 {
+	background: url("./../img_burgers/section-reviews/photo7.png") center center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+  }
+
+.person--img-photo8 {
+	background: url("./../img_burgers/section-reviews/photo8.png") center center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+   }
+
+.person__name {
+  font-size: rem(14px);
+  font-family: "Gagalin";
+  color: white;
+  line-height: 2.008;
+  text-align: left;
+  padding: rem(25px) 0; 
+
+  @include tablets {
+   padding: 0;
+  }
+
+}
+
+.person__comment {
+  font-size: rem(14px);
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: white;
+  line-height: 1.714;
+  text-align: left;
+  padding: rem(10px) 0; }

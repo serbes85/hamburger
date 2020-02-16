@@ -1,0 +1,37 @@
+.pagination {
+    position: relative;
+}
+
+.pagination__list {
+    position: fixed;
+
+}
+
+.pagination__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap; }
+    &:before
+content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #fff;
+    margin: 0 10px; }
+}
+
+.pagination__link {
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #221f1f;
+    transition: .3s;
+  }
