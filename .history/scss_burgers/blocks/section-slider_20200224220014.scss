@@ -1,0 +1,14 @@
+.slider {
+    <svg width="400" height="200" class = "brd">
+<defs>
+ <linearGradient id="Gradient1" x1="0" y1="0"
+ x2="0" y2="100%">
+	 	 	 <stop offset="0%" stop-color="#00F" />
+	 	 	 <stop offset="100%" stop-color="#0F0" />
+ </linearGradient>
+</defs>
+	 <rect x="50" y="50" width="300" height="100" fill= 		 	
+	 "url(#Gradient1)" stroke="#333333" stroke-width="4px" />
+</svg>
+    
+   }	

@@ -1,0 +1,71 @@
+.slider {
+    background: linear-gradient(to bottom, #f9b43b, #f8b13b);
+       
+}
+
+.slider__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-left{
+    width: 1%;
+}
+
+
+.button-left__img {
+    fill:#fff;
+    transform: rotateZ(-270deg);
+    cursor: pointer;
+   
+    
+}
+
+.slider__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__text {
+    font-family: "ubuntu", Helvetica, sans-serif;
+    font-weight: 300;
+    color:#fff;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+
+.slider__order {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: nowrap;
+   
+            
+}
+
+.slider__order-value {
+    font-size: rem(72px);
+    font-family: "Gagalin";
+    color: rgb(227, 80, 40);
+
+}
+
+.slider__order-currency{
+    font-size: rem(28px);
+}  
+
+.button-right {
+    width: 1%;
+}
+
+
+.button-right__img {
+    fill:#fff;
+    transform: rotateZ(-90deg);
+    cursor: pointer;
+}
+
+

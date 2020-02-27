@@ -1,0 +1,38 @@
+//breakpoint
+$tablets: 768px;
+$phones: 480px;
+
+// media
+@import './blocks/media';
+
+/* layout settings */
+@import './layout/normalize';
+@import './layout/base';
+
+/* blocks*/
+@import './blocks/fonts';
+@import './blocks/maincontent';
+@import './blocks/section';
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/btn';
+@import './blocks/title';
+@import './blocks/section-hero';
+@import './blocks/section-best';
+@import './blocks/section-team';
+@import './blocks/section-reviews';
+@import './blocks/section-menu';
+@import './blocks/section-delivery';
+@import './blocks/section-contacts';
+@import './blocks/footer';
+@import './blocks/pagination';
+
+
+
+
+
+
+
+
+
+
