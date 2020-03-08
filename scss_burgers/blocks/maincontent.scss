@@ -1,5 +1,7 @@
-.maincontent {
+.maincontent{
 	height: 100%;
-	min-height: rem(650px);
+	min-height: rem(652px);
 	transition: 1s;
-}
+	will-change: transform;
+  
+  }
