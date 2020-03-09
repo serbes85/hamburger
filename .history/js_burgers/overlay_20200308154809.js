@@ -60,6 +60,9 @@
 
   let accordeonMenu = document.querySelector(".menu__list");
   let items = document.querySelectorAll(".menu__item");
+  // let currentActiveElement = Array.prototype.find.call(
+  // 	items, elem => elem.classList.contains("accordeon__item--active")
+  // );
   let currentItem;
 
   for (let i = 0; i < items.length; i++) {
@@ -254,6 +257,18 @@
 
     }
 
+    // switch (true) {
+
+    //   case direction = "up" && prevSection.length :
+    //     performTransition(prevSection.index());
+    //     break;
+
+    //     case direction = "down" && nextSection.length :
+    //     performTransition(nextSection.index());
+    //     break;
+
+
+    // }
   };
 
   $(document).on({
@@ -264,15 +279,17 @@
       if (deltaY > 0) {
 
         scrollToSection("down");
+        // performTransition(2);
 
       }
 
       if (deltaY < 0) {
 
         scrollToSection("up");
+        // console.log("up");
 
       }
-
+      // console.log(e.originalEvent.deltaY);
     },
 
     keydown: e => {
@@ -299,6 +316,8 @@
     const target = $(e.currentTarget).data("scroll-to");
 
     performTransition(target);
+
+    // console.log(target);
 
   })
 

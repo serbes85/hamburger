@@ -24,6 +24,9 @@
 
   let accordeonTeam = document.querySelector(".accordeon");
   let items = document.querySelectorAll(".accordeon__item");
+  // let currentActiveElement = Array.prototype.find.call(
+  // 	items, elem => elem.classList.contains("accordeon__item--active")
+  // );
   let currentItem;
 
   for (let i = 0; i < items.length; i++) {
@@ -60,6 +63,9 @@
 
   let accordeonMenu = document.querySelector(".menu__list");
   let items = document.querySelectorAll(".menu__item");
+  // let currentActiveElement = Array.prototype.find.call(
+  // 	items, elem => elem.classList.contains("accordeon__item--active")
+  // );
   let currentItem;
 
   for (let i = 0; i < items.length; i++) {
@@ -193,8 +199,6 @@
   const display = $(".maincontent");
   const pagination = $(".pagination__item")
   let inScroll = false; //  флаг, для предотвращения инерции скролла при анимации
-  const mobileDetect = new MobileDetect(window.navigator.userAgent);
-  const isMobile = mobileDetect.mobile();
 
   const setActiveMenuPagination = paginationEq => {
 
@@ -254,6 +258,18 @@
 
     }
 
+    // switch (true) {
+
+    //   case direction = "up" && prevSection.length :
+    //     performTransition(prevSection.index());
+    //     break;
+
+    //     case direction = "down" && nextSection.length :
+    //     performTransition(nextSection.index());
+    //     break;
+
+
+    // }
   };
 
   $(document).on({
@@ -264,15 +280,17 @@
       if (deltaY > 0) {
 
         scrollToSection("down");
+        // performTransition(2);
 
       }
 
       if (deltaY < 0) {
 
         scrollToSection("up");
+        // console.log("up");
 
       }
-
+      // console.log(e.originalEvent.deltaY);
     },
 
     keydown: e => {
@@ -288,38 +306,16 @@
 
       }
 
-    },
-
-    touchmove: e => e.preventDefault()
+    }
   });
 
   $("[data-scroll-to]").on("click", e => {
     e.preventDefault();
 
-    const target = $(e.currentTarget).data("scroll-to");
-
-    performTransition(target);
+    const = target $(e.currentTarget).attr("data-scroll-to")
 
   })
 
-  if (isMobile) {
-    $(document).swipe({
-      //Generic swipe handler for all directions
-      swipe: function (
-        event,
-        direction,
-        distance,
-        duration,
-        fingerCount,
-        fingerData
-      ) {
-
-        const swipeDirection = direction === ("down") ? "up" : "down";
-        scrollToSection(swipeDirection);
-      }
-    });
-
-  }
 })();
 
 

@@ -253,7 +253,7 @@
       performTransition(nextSection.index());
 
     }
-
+    
   };
 
   $(document).on({
@@ -264,15 +264,15 @@
       if (deltaY > 0) {
 
         scrollToSection("down");
-
+    
       }
 
       if (deltaY < 0) {
 
         scrollToSection("up");
-
+       
       }
-
+     
     },
 
     keydown: e => {
@@ -299,7 +299,7 @@
     const target = $(e.currentTarget).data("scroll-to");
 
     performTransition(target);
-
+   
   })
 
   if (isMobile) {

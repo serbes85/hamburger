@@ -254,6 +254,18 @@
 
     }
 
+    // switch (true) {
+
+    //   case direction = "up" && prevSection.length :
+    //     performTransition(prevSection.index());
+    //     break;
+
+    //     case direction = "down" && nextSection.length :
+    //     performTransition(nextSection.index());
+    //     break;
+
+
+    // }
   };
 
   $(document).on({
@@ -264,15 +276,17 @@
       if (deltaY > 0) {
 
         scrollToSection("down");
+        // performTransition(2);
 
       }
 
       if (deltaY < 0) {
 
         scrollToSection("up");
+        // console.log("up");
 
       }
-
+      // console.log(e.originalEvent.deltaY);
     },
 
     keydown: e => {
@@ -299,6 +313,8 @@
     const target = $(e.currentTarget).data("scroll-to");
 
     performTransition(target);
+
+    // console.log(target);
 
   })
 
