@@ -1,0 +1,222 @@
+.slider {
+    background: linear-gradient(to bottom, #f9b43b, #eb8c38, #f9b43b);
+    position: relative;
+       
+}
+
+.button-left {
+    position: absolute;
+    top:50%;
+    left:-3%;
+    fill:#fff;
+    transform: rotateZ(-270deg);
+   
+    & svg {
+        width: rem(28px);
+        height: rem(14px);
+    }
+        
+}
+
+.button-right {
+    position: absolute;
+    top:50%;
+    right:-3%;
+    fill:#fff;
+    transform: rotateZ(-90deg);
+    
+    & svg {
+        width: rem(28px);
+        height: rem(14px);
+    }
+   
+}
+
+.slider__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.slider__list {
+    display: flex;
+    flex-shrink: 0;
+    width: 500%;
+    transition: 1s;
+    will-change: transform;
+}
+
+.slider__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.slider-composition {
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #f08c33;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+
+    & svg{
+        width: rem(48px);
+        height:rem(48px);
+        fill:#fff;
+    }
+
+    @include phones {
+        top: 5%;
+        left: 5%;
+       }
+}
+
+
+.slider-composition__txt{
+    font-family: 'Gagalin', Helvetica, sans-serif;
+    font-size: 0.875rem;
+    color: #fff;
+    margin-top: 0.3125rem;
+
+}
+
+.slider-kkal{
+    position: absolute;
+    left: 0%;
+    bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & svg{
+        width: rem(64px);
+        height:rem(64px);
+        fill:#fff;
+    }
+
+    @include tablets {
+        right: 1%;
+        left: auto;
+        top: 12%;
+        bottom: auto;
+    }
+
+    @include phones {
+        right: 0;
+        left: auto;
+        top: 6%;
+        bottom: auto;
+    }
+   
+}
+
+.slider-kkal__energy {
+    position: absolute;
+    font-family: 'Gagalin', Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.slider-kkal__txt{
+    font-family: 'Gagalin', Helvetica, sans-serif;
+    font-size: 0.875rem;
+    color: #fff;
+    margin-top: 0.3125rem;
+}
+
+.slider__text {
+    font-family: "ubuntu", Helvetica, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    color:#fff;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    @include tablets {
+        display: flex;
+        justify-content:center;
+    }
+}
+
+.slider__text p {
+
+    width: 100%;
+}
+
+.slider__order {
+    display: flex;
+    align-items: baseline;
+
+    @include tablets {
+        justify-content:center;
+       }
+                
+}
+
+
+.slider__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+       flex-direction:column;
+      }
+}
+
+
+.slider__img-wrapper {
+    width: 100%;
+
+    @include tablets {
+        width: 55%;
+    }
+
+    @include phones {
+        width: 55%;
+       }
+
+    @include phones {
+        text-align: center;
+       }
+}
+
+.slider__img {
+    width: 100%;
+
+    @include phones {
+        width: 85%;
+       }
+}	
+
+
+
+.slider__order-value {
+    font-size: rem(28px);
+    font-family: "Gagalin";
+    color: rgb(227, 80, 40);
+    margin-right: rem(10px);
+
+}
+
+.slider__order-value {
+    
+    & span {
+        font-size: rem(72px);
+    }
+}  
+
+
+

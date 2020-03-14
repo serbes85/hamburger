@@ -781,8 +781,7 @@ footer {
   font-size: 4.5rem;
   color: #f9b43b;
   line-height: 1;
-  margin-bottom: 0.625rem;
-  text-align: left; }
+  margin-bottom: 0.625rem; }
   @media screen and (max-width: 480px) {
     .title {
       font-size: 3.5rem; } }
@@ -950,10 +949,19 @@ footer {
   left: -3%;
   fill: #fff;
   -webkit-transform: rotateZ(-270deg);
-          transform: rotateZ(-270deg); }
+          transform: rotateZ(-270deg);
+  z-index: 20; }
   .button-left svg {
     width: 1.75rem;
     height: 0.875rem; }
+  @media screen and (max-width: 768px) {
+    .button-left {
+      top: 50%;
+      left: 0; } }
+  @media screen and (max-width: 480px) {
+    .button-left {
+      top: 45%;
+      left: 0; } }
 
 .button-right {
   position: absolute;
@@ -961,10 +969,19 @@ footer {
   right: -3%;
   fill: #fff;
   -webkit-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg); }
+          transform: rotateZ(-90deg);
+  z-index: 20; }
   .button-right svg {
     width: 1.75rem;
     height: 0.875rem; }
+  @media screen and (max-width: 768px) {
+    .button-right {
+      top: 50%;
+      right: 0; } }
+  @media screen and (max-width: 480px) {
+    .button-right {
+      top: 45%;
+      right: 0; } }
 
 .slider__container {
   width: 100%;
@@ -998,7 +1015,7 @@ footer {
 .slider-composition {
   position: absolute;
   top: 12%;
-  left: 0%;
+  left: 1%;
   width: 5.5rem;
   height: 5.5rem;
   background-color: #f08c33;
@@ -1021,6 +1038,13 @@ footer {
     width: 3rem;
     height: 3rem;
     fill: #fff; }
+  .slider-composition:hover .composition__dropdown {
+    width: 15.625rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    @media screen and (max-width: 480px) {
+      .slider-composition:hover .composition__dropdown {
+        width: 12.5rem; } }
   @media screen and (max-width: 480px) {
     .slider-composition {
       top: 5%;
@@ -1031,6 +1055,32 @@ footer {
   font-size: 0.875rem;
   color: #fff;
   margin-top: 0.3125rem; }
+
+.composition__dropdown {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  overflow: hidden; }
+
+.composition__dropdown-list {
+  background: #fff;
+  opacity: 0.8;
+  border-radius: 0.3125rem; }
+  .composition__dropdown-list svg {
+    width: 2.625rem;
+    height: 2.625rem; }
+
+.composition__dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3125rem; }
 
 .slider-kkal {
   position: absolute;
@@ -1053,6 +1103,12 @@ footer {
     width: 4rem;
     height: 4rem;
     fill: #fff; }
+  @media screen and (max-width: 768px) {
+    .slider-kkal {
+      right: 1%;
+      left: auto;
+      top: 12%;
+      bottom: auto; } }
   @media screen and (max-width: 480px) {
     .slider-kkal {
       right: 0;
@@ -1123,18 +1179,18 @@ footer {
 
 .slider__img-wrapper {
   width: 100%; }
+  @media screen and (max-width: 768px) {
+    .slider__img-wrapper {
+      width: 55%; } }
   @media screen and (max-width: 480px) {
     .slider__img-wrapper {
-      width: 75%; } }
+      width: 55%; } }
   @media screen and (max-width: 480px) {
     .slider__img-wrapper {
       text-align: center; } }
 
 .slider__img {
   width: 100%; }
-  @media screen and (max-width: 480px) {
-    .slider__img {
-      width: 85%; } }
 
 .slider__order-value {
   font-size: 1.75rem;
@@ -1511,6 +1567,10 @@ footer {
 .menu__link-txt p {
   width: 80%;
   line-height: 1.71; }
+  @media screen and (max-width: 480px) {
+    .menu__link-txt p {
+      width: 90%;
+      line-height: 1.42; } }
 
 .menu__link--meat {
   background: url("./../img_burgers/section-menu/meat.png") center center/cover no-repeat; }
@@ -1536,6 +1596,8 @@ footer {
       -ms-flex: 1;
           flex: 1;
   margin-right: 2%; }
+  .form__comment:last-child {
+    margin-right: 0%; }
 
 .form {
   display: -webkit-box;
@@ -1741,8 +1803,10 @@ footer {
     background-color: #c1401e; }
 
 .contacts {
-  background: url("./../img_burgers/section-contacts/map.png") center center/cover no-repeat;
   position: relative; }
+
+.contacts__map {
+  height: 100%; }
 
 .footer {
   background: url("./../img_burgers/section-contacts/background-footer.png") center center/cover no-repeat;
